@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: repeat-x;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: hsl(210, 10%, 33%);
+}
+
+a {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+    font-weight: 500;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+#container {
+    padding-top: 7rem;
+    width: 85%;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    min-height: 363px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: hsl(210, 10%, 73%);
+    line-height: 1.7rem;
+}
+
+.spacer {
+    margin-bottom: 2rem;
+}
+
+.spacer-xl {
+    gap: 4.5rem;
+}
+
+.logo {
+    margin-bottom: 3.5rem;
+}
+
+.buttons {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.buttons button {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.ios {
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid hsl(171, 66%, 35%);
+    padding: 1rem;
+    cursor: pointer;
+    background: hsl(171, 66%, 44%);
+    border-radius: 50vw;
+    margin-bottom: 1.8rem;
+    box-shadow: 0 5px 15px hsl(171, 66%, 75%);
+    transition: 0.4s;
+}
+
+.ios:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.mac {
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid hsl(233, 100%, 59%);
+    padding: 1rem;
+    cursor: pointer;
+    background: hsl(233, 100%, 69%);
+    border-radius: 50vw;
+    box-shadow: 0 5px 15px hsl(233, 100%, 85%);
+    transition: 0.4s;
+}
+
+.mac:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+section {
+    margin-top: 5rem;
+    text-align: center;
+    display: grid;
+    gap: 2rem;
+}
+
+.snippets img {
+    width: 100%;
+}
+
+.clipboards img {
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+section p {
+    color: hsl(210, 10%, 73%);
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: hsl(201, 11%, 96%);
+    padding-top: 3rem;
+    font-size: 1.2rem;
+}
+
+.footer-logo img {
+    width: 4rem;
+}
+
+.footercontainer {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    row-gap: 2.3rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 2.3rem;
+}
+
+.attribution {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    #container {
+        padding-top: 7rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .buttons {
+        display: flex;
+        max-width: 32rem;
+        gap: 2.3rem;
+        margin: auto;
+        margin-bottom: 150px;
+    }
+
+    .ios {
+        margin-bottom: 0;
+    }
+
+    header p {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        max-width: 35rem;
+    }
+
+    .snippets {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .track {
+        grid-column: span 2;
+    }
+
+    .desktop {
+        grid-row: span 3;
+    }
+
+    .social {
+        flex-direction: row;
+    }
+}
